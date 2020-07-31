@@ -48,6 +48,7 @@ func main() {
 	unix.Unveil("", "")
 	unix.PledgePromises("stdio inet dns rpath")
 
+	var token, userToken string
 	var err error
 	var req *http.Request
 	var client = *http.DefaultClient
@@ -64,6 +65,14 @@ func main() {
 
 	if *title == "" || *body == "" {
 		flag.PrintDefaults()
+		os.Exit(1)
+	}
+
+	token = os.Getenv("PUSHOVER_TOKEN")
+	userToken = os.Getenv("PUSHOVER_USER")
+
+	if token == "" || userToken == "" {
+		fmt.Println("please set PUSHOVER_TOKEN and PUSHOVER_USER")
 		os.Exit(1)
 	}
 
