@@ -1,4 +1,7 @@
-github.com/qbit/gham v0.0.1 h1:5WrXlnsfU1HlGQigpL7akQVNZj1NOO2fsYfUkf936VE=
-github.com/qbit/gham v0.0.1/go.mod h1:cQRciVbFabF/3D8jBqAZ8XEq6fOkof7XrwBbA/S7zdY=
-golang.org/x/sys v0.0.0-20200302150141-5c8b2ff67527 h1:uYVVQ9WP/Ds2ROhcaGPeIdVq0RIXVLwsHlnvJ+cT1So=
-golang.org/x/sys v0.0.0-20200302150141-5c8b2ff67527/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/sys v0.0.0-20210917161153-d61c044b1678/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/sys v0.3.0 h1:w8ZOecv6NaNa/zC8944JTU3vz4u6Lagfk4RPQxv92NQ=
+golang.org/x/sys v0.3.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+suah.dev/protect v1.2.0 h1:4G4V43yVYXCjLFzaE9QJR0fLo3rf5vNBS9YxyoI19DU=
+suah.dev/protect v1.2.0/go.mod h1:Ocn1yqUskqe/is6N2bxQxtT+fegbvQsOFyHbJAQu9XE=
+suah.dev/protect v1.2.1 h1:Z0hnyMALzIEOrh0omfU5TfWVvofaujZ8/ktV8tuKW2U=
+suah.dev/protect v1.2.1/go.mod h1:hB/m1oUsJfZYvbdycF1FWePCFCvCnOv2Frj/G9QA8JA=

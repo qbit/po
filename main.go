@@ -11,7 +11,7 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"golang.org/x/sys/unix"
+	"suah.dev/protect"
 )
 
 var verbose bool
@@ -45,8 +45,9 @@ func msg(msg interface{}) {
 }
 
 func main() {
-	unix.Unveil("", "")
-	unix.PledgePromises("stdio inet dns rpath")
+	protect.Unveil("", "")
+	protect.Pledge("stdio inet dns rpath")
+	protect.UnveilBlock()
 
 	var token, userToken string
 	var err error
