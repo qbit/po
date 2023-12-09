@@ -21,7 +21,7 @@
             version = "v0.0.0";
             src = ./.;
 
-            vendorSha256 = "sha256-5XxgYk1zkH9Txsb/A4s/zUdBKRaOzAHOxD58cqEV4ck=";
+            vendorHash = "sha256-5XxgYk1zkH9Txsb/A4s/zUdBKRaOzAHOxD58cqEV4ck=";
             proxyVendor = true;
           };
         });

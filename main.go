@@ -45,7 +45,7 @@ func msg(msg interface{}) {
 }
 
 func main() {
-	protect.Unveil("", "")
+	protect.Unveil("/etc/ssl", "r")
 	protect.Pledge("stdio inet dns rpath")
 	protect.UnveilBlock()
 
