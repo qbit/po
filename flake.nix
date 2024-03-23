@@ -1,7 +1,7 @@
 {
   description = "po: pushover notification tool";
 
-  inputs.nixpkgs.url = "nixpkgs/nixos-22.11";
+  inputs.nixpkgs.url = "nixpkgs/nixos-unstable";
 
   outputs = { self, nixpkgs }:
     let
@@ -18,11 +18,10 @@
         in {
           po = pkgs.buildGoModule {
             pname = "po";
-            version = "v0.0.0";
+            version = "v1.0.0";
             src = ./.;
 
-            vendorHash = "sha256-5XxgYk1zkH9Txsb/A4s/zUdBKRaOzAHOxD58cqEV4ck=";
-            proxyVendor = true;
+            vendorHash = "sha256-ftBMG3c5uDkNiOiZvO/ixa8FOrMfE8VM1AmLTSlYu2o=";
           };
         });
 
